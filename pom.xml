@@ -16,6 +16,9 @@
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
+        <module>renren-fast</module> <!--后台管理系统-->
+        <module>renren-generator</module> <!--代码生成器-->
+        <module>gulimall-common</module> <!--服务依赖库-->
     </modules>
 
 
