@@ -1,10 +1,17 @@
-# 配置数据源
 spring:
+  # 配置数据源
   datasource:
     username: root
     password: root
     url: jdbc:mysql://172.16.28.109:3306/gulimall_sms
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # Nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: gulimall-coupon
 
 mybatis-plus:
   # 映射位置
@@ -16,3 +23,5 @@ mybatis-plus:
 
 server:
   port: 7000
+
+
